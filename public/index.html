@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <style>
+      .ig-InstantGamesModule{
+        display :none !important;
+      } 
+
+      body{
+
+      }
+    </style>
+    <title>React App</title>
+  </head>
+  <body>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <main id="sports-main-root">
+
+      <script src="https://cdn.p2377odd.com/js/deflate.min.js?v=1"></script>
+      <link href="https://cdn.p2377odd.com/js/Odometer.css" rel="stylesheet" /><link href="https://cdn.p2377odd.com/js/OdometerAnim.css" rel="stylesheet" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44425333-2"></script>
+      <script async>
+              //const adra = "{\"version\":\"2.32.125\",\"animation\":\"2\",\"stream\":\"2\",\"paSec\":\"0\",\"virtualStream\":\"https://streamingzeze.p2377man.com/freebetstream/$id/live.m3u8\",\"orderMain\":null,\"rgsUrl\":\"https://games.p2377odd.com/RGSSlotListFree.js?t=\"}"
+
+              document.documentElement.style.setProperty('--DisplayLogo', '');
+              document.documentElement.style.setProperty('--Logo', `url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMi4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxMDUgMjMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEwNSAyMzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6bm9uZTt9DQoJLnN0MXtmaWxsOiNGRkZGRkY7fQ0KCS5zdDJ7ZmlsbDojRkZGMjAwO30NCjwvc3R5bGU+DQo8Zz4NCgk8cmVjdCB4PSIyOS4zIiB5PSIxLjkiIGNsYXNzPSJzdDAiIHdpZHRoPSIxMDUiIGhlaWdodD0iMjIuNCIvPg0KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0zMC41LDRoMy4ydjUuOWgwYzAuNi0wLjksMS43LTEuNCwzLjEtMS40YzIuNSwwLDQuMiwyLDQuMiw1LjJjMCwzLjctMi4zLDUuNS00LjcsNS41Yy0xLjIsMC0yLjQtMC40LTMuMS0xLjcNCgkJaDBsLTAuMSwxLjRoLTIuN2MwLTAuNywwLjEtMS45LDAuMS0zLjFWNHogTTMzLjcsMTQuNWMwLDAuMiwwLDAuNCwwLjEsMC42YzAuMiwwLjgsMC45LDEuNSwxLjksMS41YzEuNCwwLDIuMi0xLjEsMi4yLTIuOQ0KCQljMC0xLjYtMC43LTIuOS0yLjItMi45Yy0wLjksMC0xLjcsMC43LTEuOSwxLjZjMCwwLjItMC4xLDAuNC0wLjEsMC42VjE0LjV6Ii8+DQoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTQ1LjYsMTQuOGMwLjEsMS4zLDEuNCwyLDIuOSwyYzEuMSwwLDItMC4xLDIuOC0wLjRsMC40LDIuMmMtMSwwLjQtMi4zLDAuNy0zLjcsMC43Yy0zLjUsMC01LjUtMi01LjUtNS4yDQoJCWMwLTIuNiwxLjYtNS41LDUuMi01LjVjMy4zLDAsNC42LDIuNiw0LjYsNS4xYzAsMC41LTAuMSwxLTAuMSwxLjNINDUuNnogTTQ5LjQsMTIuNmMwLTAuOC0wLjMtMi4xLTEuOC0yLjFjLTEuMywwLTEuOSwxLjItMiwyLjENCgkJSDQ5LjR6Ii8+DQoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTU3LjgsNS45djIuOGgyLjNWMTFoLTIuM3YzLjdjMCwxLjIsMC4zLDEuOCwxLjMsMS44YzAuNCwwLDAuNywwLDAuOS0wLjFsMCwyLjRjLTAuNCwwLjEtMS4yLDAuMy0yLjEsMC4zDQoJCWMtMSwwLTEuOS0wLjQtMi40LTAuOWMtMC42LTAuNi0wLjktMS42LTAuOS0zVjExaC0xLjRWOC42aDEuNFY2LjdMNTcuOCw1Ljl6Ii8+DQoJPHBhdGggY2xhc3M9InN0MiIgZD0iTTc1LDE4LjlMNzMuNSwxNmMtMC42LTEuMS0xLTItMS40LTIuOWgwYy0wLjMsMC45LTAuNywxLjgtMS4zLDIuOWwtMS4zLDIuOWgtNC4ybDQuNy04LjJsLTQuNS04aDQuMmwxLjQsMw0KCQljMC41LDEsMC44LDEuOCwxLjIsMi43aDBjMC40LTEsMC43LTEuOCwxLjEtMi43bDEuNC0zSDc5bC00LjYsNy45bDQuOCw4LjNINzV6Ii8+DQo8L2c+DQo8L3N2Zz4NCg==')`);
+
+              const isMobile = (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+              if (!isMobile) {
+                  const par = new URL(window.location.href).search
+                  const adr = ""
+                  if (adr != '') window.location.href = adr + par
+              }
+
+              //Global site tag (gtag.js) - Google Analytics
+              window.dataLayer = window.dataLayer || [];
+              function gtag() { dataLayer.push(arguments); }
+              gtag('js', new Date());
+
+              gtag('config', 'UA-44425333-2');
+          </script>
+          <script>
+                
+                  localStorage.setItem('lng' , '1');
+                  var ns_BasteUI = {}, Landing = {}, MainMenu = {}, PreMatch = {}, Live = {}
+
+                  var Config = {
+                      "CountLoaded": 0,
+                      "MainHub": { "ID": "t:5", "hubname": "MyHub" },
+                      "MainTheme": "jeshile",
+                      "Wait": "1000",
+                      "InPlayHub": "https://klfreebet.p2377man.com/",
+                      "PreMatchHub": "https://kdfreebetbackup.p2377man.com/",
+                      "UserHub": "https://kufreebetbackup.p2377man.com/",
+                      "DogsHub": "https://hubdogszeze.p2377man.com/",
+                      "Dogsm3u8": "https://streamingzeze.p2377man.com/dograce/live.m3u8",
+                      "DogsHubVideo": "",
+                      "AllowSetPercentage": "0",
+                      "Gjuhet": "{'1':'English','2':'Shqip','3':'Português','6':'Italiano','5':'Македонски јазик','7':'Deutch','8':'Ελληνικά', '9':'Français', '10':'Español', '11':'Crnogorski', '12':'Srpski', '13':'Türkçe', '14':'Česky', '15':'Nenderland', '16':'Slovenski'}",
+                      "DefaultLang": "2",
+                      "GjuhetShtetet": {'IT':'6','PT':'3','BR':'3'},
+                      "AgjentTimeOut": "43200",
+                      "IDNS": "",
+                      "HiqOverDraft": "",
+                      "TXTUser1": "",
+                      "TXTUser2": "",
+                      "NL": "7,9,13,12,14",
+                      "JP": "",
+                      "HDR": "1",
+                      "HRU": "0",
+                      "HKEA": "1",
+                      "HKE": "1",
+                      "HLUCKY": "1",
+                      "HBOR": "0",
+                      "SPOKER": "0",
+                      "HPOKER": "",
+                      "HBING": "0",
+                      "HLIVCASINO": "0",
+                      "SLIVCASINO": "0",
+                      "HLOO": "0",
+                      "HFAA": "0",
+                      "HGA": "0",
+                      "HRL": "0",
+                      "HSH": "0",
+                      "HSA": "0",
+                      "HD7": "0",
+                      "HLLCDL": "",
+                      "HLDAPDL": "",
+                      "Decimal": "2",
+                      "KursiLEK": "125",
+                      "MyBetsKursi": "125",
+                      "Rregullore": "1",
+                      "Terms": "http://m.my1bet.com/css/terms/generalrules.html",
+                      "Gamble": "http://m.my1bet.com/css/terms/gambleresponsibly.html",
+                      "Privacy": "http://m.my1bet.com/css/terms/privacypolicy.html",
+                      "LanguageURL": "https://games.p2377man.com/lngMobile/",
+                      "Blob": "https://apifreebet.p2377man.com/",
+                      "RegjistrohuSimple": "",
+                      "LoginActive": "0",
+                      "BetConstructID": "",
+                      "CasinoDubai": "1241",
+                      "RGSGroupIDLek": "52112",
+                      "RGSGroupIDEUR": "52113",
+                      "RGSGroupIDUSD": "52114",
+                      "RGSNovo": "http://cdn888.b-cdn.net/novonew/",
+                      "TRSLuckyURL": "http://lucky.p2377odd.com/lucky-balls/Default.aspx?key=",
+                      "RGSRest": "http://cdn888.b-cdn.net/",
+                      "AnimURL": "https://animim.zeze24.com/api/cookie/cookie.aspx?id=",
+                      "LoginLogo": "",
+                      "MonedhatDefaultJoin": "2",
+                      "RGSGroupsDynamic": "1",
+                      "ChatUrl": "https://chatclient.betx360.com",
+                      "UsageRestrictions": "",
+                      "UsageRestrictionsRoles": "",
+                      "AnimationLanguage": "",
+                      "ShowAnulluar": "0",
+                      "ShowVirtuals": "1",
+                      "SVG": "0",
+                      "ShowTotalGames": "1",
+                      "ShowPeqindjeMbetese": "",
+                      "ShowKiron": "1",
+                      "PokerLink": "",
+                      "CnkSystem": "0",
+                      "HasCashOut": "0",
+                      "ShtoUserDefaultMonedha": "-1",
+                      "ShtoUserDefaultMonedhaAgjent": "-1",
+                      "MyBetsHiqKonvertimet": "0",
+                      "Rrumbullakos005": "0",
+                      "SelectedLang": "2",
+                      "libs": {
+                          "Main": [{ "cls": "Themes", "deps": "Themes", "loadcss": "true", "loaded": 0, "onlyCss": "true" }
+                              , { "cls": "ns_BasteUI.storage", "deps": "ns_ui", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "Socket", "deps": "WebSocket", "loadcss": "false", "loaded": 0 }
+                              , { "cls": "Landing.Main", "deps": "/Kryesore/Kryesore", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "MainMenu.Main", "deps": "/MainMenu/MainMenu", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "MainMenu.sideMenu", "deps": "/MainMenu/sideMenu", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "MainMenu.BetSlip", "deps": "BetSlip", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "MainMenu.Searchy", "deps": "/MainMenu/Search", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "MainMenu.Login", "deps": "/MainMenu/Login", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "MainMenu.Member", "deps": "/MainMenu/Member", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "MainMenu.Footer", "deps": "/Footer", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "AppStart", "deps": "Main", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "PreMatch.InstantGamesV1", "deps": "/Kryesore/InstantGames", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "PreMatch.InstantCasino", "deps": "/Kryesore/InstantCasino", "loadcss": "true", "loaded": 0 }
+                          ],
+                          "Landing": [{ "cls": "PreMatch.FeaturedMatches", "deps": "/FeaturedMatches/FeaturedMatches", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "PreMatch.SportetLart", "deps": "/MenuSportet/PreMatch", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "PreMatch.Ndeshjet", "deps": "/Kampionat/Ndeshjet", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "PreMatch.TopCupons", "deps": "/Kryesore/TopCupons", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "StreamProviders", "deps": "/Live/StreamProviders", "loadcss": "false", "loaded": 0 }
+                              , { "cls": "Live.OverView", "deps": "/Live/LiveOverView", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "PreMatch.Highlights", "deps": "/Kryesore/Highlights", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "PreMatch.Promovim", "deps": "/Kryesore/Promovim", "loadcss": "true", "loaded": 0 }
+                          ],
+                          "Kampionat": [{ "cls": "PreMatch.Ndeshjet", "deps": "/Kampionat/Ndeshjet", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "PreMatch.Kampionatet", "deps": "/Kampionat/Kampionat", "loadcss": "true", "loaded": 0 }
+                          ],
+                          "Sport": [{ "cls": "PreMatch.Ndeshjet", "deps": "/Kampionat/Ndeshjet", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "PreMatch.FeaturedMatches", "deps": "/FeaturedMatches/FeaturedMatches", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "PreMatch.Sport", "deps": "/Sport/Sport", "loadcss": "true", "loaded": 0 }
+                          ],
+                          "Ndeshje": [{ "cls": "StreamProviders", "deps": "/Live/StreamProviders", "loadcss": "false", "loaded": 0 }
+                              , { "cls": "PreMatch.Ndeshje", "deps": "/Ndeshje/Ndeshje", "loadcss": "true", "loaded": 0 }],
+                          "MyBets": [{ "cls": "MainMenu.MyBets", "deps": "/MainMenu/MyBets", "loadcss": "true", "loaded": 0 }],
+                          "Regjistrohu": [{ "cls": "PreMatch.Regjistrohu", "deps": "/MainMenu/Regjistrohu", "loadcss": "true", "loaded": 0 }],
+                          "RegjistrohuPlain": [{ "cls": "PreMatch.RegjistrohuPlain", "deps": "/MainMenu/Regjistrohu", "loadcss": "true", "loaded": 0 }],
+                          "ListMembers": [{ "cls": "MainMenu.ListMembers", "deps": "/MainMenu/ListMembers", "loadcss": "true", "loaded": 0 }],
+                          "Fjalekalimi": [{ "cls": "MainMenu.Fjalekalimi", "deps": "/MainMenu/Fjalekalimi", "loadcss": "true", "loaded": 0 }],
+                          "Statement": [{ "cls": "MainMenu.Statement", "deps": "/MainMenu/Statement", "loadcss": "true", "loaded": 0 }],
+                          "Live": [{ "cls": "Live.LiveMain", "deps": "/Live/LiveMain", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "Live.LiveNdeshje", "deps": "/Live/Live", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "StreamProviders", "deps": "/Live/StreamProviders", "loadcss": "false", "loaded": 0 }
+                          ],
+                          "Dogs": [{ "cls": "Dogs.Main", "deps": "/Dogs/Dogs", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "DogsMainMenu.BetSlip", "deps": "/Dogs/BetSlip", "loadcss": "false", "loaded": 0 }
+                          ],
+                          "DogsMyBets": [{ "cls": "MainMenu.MyBetsDogs", "deps": "/Dogs/MyBets", "loadcss": "true", "loaded": 0 }],
+                          "Keno": [{ "cls": "KenoV2.Main", "deps": "/Games/Keno/Keno", "loadcss": "true", "loaded": 0 }],
+                          "Virtual": [{ "cls": "StreamProviders", "deps": "/Live/StreamProviders", "loadcss": "false", "loaded": 0 }
+                              , { "cls": "Virtual.Main", "deps": "/Games/Virtual/Virtual", "loadcss": "true", "loaded": 0 }
+                              , { "cls": "Virtual.Event", "deps": "/Games/Virtual/Event", "loadcss": "true", "loaded": 0 }],
+                          "Lucky6": [{ "cls": "Games.Lucky6", "deps": "Games/Lucky/Lucky6", "loadcss": "true", "loaded": 0 }],
+                          "KenoAustria": [{ "cls": "KenoAustria.Main", "deps": "/Games/KenoAustria/KenoAustria", "loadcss": "false", "loaded": 0 }],
+                          "SlotsBookOfRa": [{ "cls": "Slots.BookOfRa", "deps": "/Games/Slots/BookOfRa/BookOfRa", "loadcss": "true", "loaded": 0 }],
+                          "CasinoDubai": [{ "cls": "Slots.CasinoDubai", "deps": "/Games/CasinoDubai", "loadcss": "true", "loaded": 0 }],
+                          "Poker": [{ "cls": "Poker.Poker", "deps": "/Games/Poker", "loadcss": "true", "loaded": 0 }],
+                          "BetConstruct": [{ "cls": "Slots.BetConstruct", "deps": "/Games/BetC/BetConstruct", "loadcss": "true", "loaded": 0 }],
+                          "Roulette": [{ "cls": "Tools", "deps": "/Roulette/Tools", "loadcss": "false", "loaded": 0 }
+                              , { "cls": "Roulette.Main", "deps": "/Roulette/Roulette", "loadcss": "true", "loaded": 0 }
+                          ],
+                          "RouletteMyBets": [{ "cls": "MainMenu.MyBetsRoulette", "deps": "/Roulette/MyBets", "loadcss": "true", "loaded": 0 }]
+                      }
+                  };
+
+                  var BlockCountry = "";
+                  document.documentElement.setAttribute('MainTheme', Config.MainTheme);
+                  Config["TimeZone"] = `` || Intl.DateTimeFormat().resolvedOptions().timeZone;
+              </script>
+          <script async>
+                  Config["process"] = {
+                      env: "production",
+                      mode: "" || "full",
+                      appVersion: navigator.appVersion,
+                      userAgent: navigator.userAgent,
+                  }
+                  const getSpecs = { options: [], data: {}, header: [navigator.platform, navigator.userAgent, navigator.appVersion, navigator.vendor, window.opera], dataos: [{ name: "Windows Phone", value: "Windows Phone", version: "OS" }, { name: "Windows", value: "Win", version: "NT" }, { name: "iPhone", value: "iPhone", version: "OS" }, { name: "iPad", value: "iPad", version: "OS" }, { name: "Kindle", value: "Silk", version: "Silk" }, { name: "Android", value: "Android", version: "Android" }, { name: "PlayBook", value: "PlayBook", version: "OS" }, { name: "BlackBerry", value: "BlackBerry", version: "/" }, { name: "Macintosh", value: "Mac", version: "OS X" }, { name: "Linux", value: "Linux", version: "rv" }, { name: "Palm", value: "Palm", version: "PalmOS" }], databrowser: [{ name: "Chrome", value: "Chrome", version: "Chrome" }, { name: "Firefox", value: "Firefox", version: "Firefox" }, { name: "Safari", value: "Safari", version: "Version" }, { name: "Internet Explorer", value: "MSIE", version: "MSIE" }, { name: "Opera", value: "Opera", version: "Opera" }, { name: "BlackBerry", value: "CLDC", version: "CLDC" }, { name: "Mozilla", value: "Mozilla", version: "Mozilla" }], init: function () { var e = this.header.join(" "), a = this.matchItem(e, this.dataos), n = this.matchItem(e, this.databrowser); return this.data = { os: a, browser: n }, this.data }, matchItem: function (e, a) { var n, r, o, i = 0, s = 0; for (i = 0; i < a.length; i += 1)if (new RegExp(a[i].value, "i").test(e)) { if (n = new RegExp(a[i].version + "[- /:;]([\\d._]+)", "i"), o = "", (r = e.match(n)) && r[1] && (r = r[1]), r) for (r = r.split(/[._]+/), s = 0; s < r.length; s += 1)o += 0 === s ? r[s] + "." : r[s]; else o = "0"; return { name: a[i].name, version: parseFloat(o) } } return { name: "unknown", version: 0 } } };
+                  Config["process"]["os"] = getSpecs.init().os
+                  Config["process"]["browser"] = getSpecs.data.browser
+                  const log = console.log
+                  var debug = function (...params) { }
+                  if (window.location.href.indexOf("localhost") == -1) {
+                      console.log = function () { }
+                  }
+                  window.addEventListener("debugMode", function (event) {
+                      console.log = log
+                      Config["process"].env = "debug"
+                      debug = function (...arguments) {
+                          log("%c Debug: " + Array.prototype.join.call(arguments, "  ") + " ", "color:#222; background-color: #4acfa5; line-height: 24px; font-weight:bold;")
+                      }
+
+                      delete log
+                      const dataEvent = new CustomEvent('dataConfig', {
+                          detail: {
+                              "Theme": Config.MainTheme, "Blob": Config.Blob, "InPlayHub": Config["InPlayHub"],
+                              "PreMatchHub": Config["PreMatchHub"], "UserHub": Config["UserHub"], "DogsHub": Config["DogsHub"],
+                              "Dogsm3u8": Config["Dogsm3u8"], "DogsHubVideo": Config["DogsHubVideo"], "TimeZone": Config["TimeZone"]
+                          }
+                      });
+                      window.dispatchEvent(dataEvent);
+
+                      window.addEventListener("runCode", function (event) {
+                          const codeRun = new Function(event.detail);
+                          codeRun()
+                      });
+                  });
+              </script>
+          <link rel="stylesheet" href="https://cdn.p2377odd.com/video-js.min.css" /></head>
+          <body class="All">
+          <form method="post" action="./" id="form1">
+          <div class="aspNetHidden">
+          <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="d/hCqPG+4536DG1GON9lAqxx0QeeYhIge4XHTT0QlRBwOSNkiRbiDROjIEZgI9HEqN0YVpB5/HaRSXBPOW3YOOKu0lOq2zHysg5MYn236ck=" />
+          </div>
+          <div class="aspNetHidden">
+          <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+          <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="p0Aha56PIXlLl3+abXDeLYkVrjk7PduIVOLj+Jr9m5CyW25ppXaaqYvaHVE5zNR9osiWwSXcGSa5H+su1RMdC70XBte76ysLtWEMh9iLP6W1dvmAbPp3zRznXcgVYaxwi4jSWDYYTUuGe4DsThmlCdkQXYnGe90Ji3pya9yRh6628lLaecZWCBsLsyH5qW6ZScc9FsMyN6gKPX/OyitWMht5BnYCvMXgKN7HyCt5po8=" />
+          </div>
+          <input type="hidden" name="CO" id="CO" value="MK" />
+          <input type="hidden" name="IP" id="IP" value="185.100.244.102" />
+          <input type="hidden" name="UID" id="UID" />
+          <input type="hidden" name="spk" id="spk" value="33145,84299,130418,140553,156344" />
+          <input type="hidden" name="ExtraLinkCSS" id="ExtraLinkCSS" />
+          <input type="hidden" name="ExtraLinkJS" id="ExtraLinkJS" />
+          </form>
+          <div id="logo" class="logo logo2" style="display: none"></div>
+          <div id="Main"></div>
+
+
+
+
+          <script src="https://cdn.p2377odd.com/Luxon.js"></script>
+          <script src="https://cdn.p2377odd.com/swg.js?v=3"></script>
+          <script src="https://cdn.p2377odd.com/js/jqsr.min.js?v=1"></script>
+          <script src="https://cdn.p2377odd.com/js/yui.min.js?v=3"></script>
+          <script src="https://cdn.p2377odd.com/js/underscore.min.js?v=1"></script>
+          <script async src="https://cdn.p2377odd.com/videojs.js"></script>
+          <script async src="https://cdn.p2377odd.com/xml2json.js"></script>
+          <script async src="https://cdn.p2377odd.com/js/cap.min.js?v=5"></script>
+          <script src="https://cdn.p2377odd.com/js/Odometer.js"></script>
+          <script>
+              //function Init(n, t) { var i, f, e, r, u; if (loadedModules.indexOf(n) == -1) { loadedModules.push(n); i = Config.libs[n]; window.moduleLoad && (debug("Loading module " + n), console.groupCollapsed(), console.log(n, i), console.groupEnd()); f = ""; for (e in i) r = i[e], f += r.deps + "|" + r.cls + "|" + r.loadcss + "~"; u = encodeURIComponent(f); caches.match("/V").then(function (i) { i ? i.text().then(function (i) { appVersion != i ? caches.delete("Libs").then(function () { onlywhenready(n, t, u) }) : onlywhenready(n, t, u) }) : onlywhenready(n, t, u) }) } else t() } function getFile(n, t) { var i = new XMLHttpRequest; i.onreadystatechange = function () { i.readyState == 4 && i.status == 200 && t(i.responseText) }; i.open("GET", n, !1); i.send(null) } function onlywhenready(n, t, i) { caches.has("Libs").then(function (n) { n || caches.open("Libs") }); caches.match("/V").then(function (r) { r ? caches.match("/" + n).then(function (r) { r ? r.text().then(function (i) { appendCode(i, t, n) }) : process(Config.Blob + "blob?libs=" + i, t, n) }) : caches.open("Libs").then(function (r) { process(Config.Blob + "blob?libs=" + i, t, n); r.put("V", new Response(appVersion)) }) }) } function process(n, t, i) { getFile(n, function (n) { if (n.indexOf("~") == -1) { var r = JSON.parse(n); r.forEach(function (n) { var t; n.T == "css" && (t = document.createElement("link"), t.setAttribute("rel", "stylesheet"), t.setAttribute("href", n.name), header.appendChild(t)); n.T == "js" && (t = document.createElement("script"), t.setAttribute("type", "text/javascript"), t.setAttribute("src", n.name), header.appendChild(t)) }); setTimeout(t, 500) } else window.IsHttps && caches.open("Libs").then(function (t) { t.put(i, new Response(n)) }), appendCode(n, t, i) }) } function appendCode(n, t) { var r = n.split("|||"), i = document.createDocumentFragment(); r.forEach(function (n) { var t; n[0] == "~" ? (n = n.substring(1), t = document.createElement("style"), t.type = "text/css", t.appendChild(document.createTextNode(n)), i.appendChild(t)) : (t = document.createElement("script"), t.type = "text/javascript", t.setAttribute("charset", "UTF-8"), t.appendChild(document.createTextNode(n)), i.appendChild(t)) }); header.appendChild(i); t() } function ExternalCssAndJS() { var i = document.getElementById("ExtraLinkCSS").value, r = document.getElementById("ExtraLinkJS").value, n, t; i != "" && (n = document.createElement("link"), n.setAttribute("rel", "stylesheet"), n.setAttribute("href", atob(i) + "?v=" + random), header.appendChild(n)); r != "" && (t = document.createElement("script"), t.setAttribute("type", "text/javascript"), t.setAttribute("src", atob(r) + "?v=" + random), header.appendChild(t)) } var loadedModules = [], header = document.head || document.getElementsByTagName("head")[0], random = Math.round((new Date).getTime() / 1e3), appVersion = "", lng; window.IsHttps = Boolean(window.caches); lng = localStorage.getItem("lng") || Config.DefaultLang; Config.Language || (Config.Language = {}); localStorage.setItem("lng", lng); Config.SelectedLang = lng; getFile(Config.Blob + "getConfig", function (n) { var i = JSON.parse(JSON.parse(n)), t; appVersion = i.version; document.cookie = "app_version=" + appVersion + ";"; for (t in i) t !== "version" && (Config[t.charAt(0).toUpperCase() + t.slice(1)] = i[t]) }); getFile(Config.LanguageURL + lng + ".json?v=" + random, function (n) { Config.Language = JSON.parse(n) }); window.Vazhdo = !0;
+              var StorageSystem = function () { function t() { } return t.prototype.getItem = function (t) { return localStorage.getItem(t) }, t.prototype.setItem = function (t, e) { return localStorage.setItem(t, e), !0 }, t.prototype.removeItem = function (t) { return localStorage.removeItem(t) }, t }(), docCookies = new StorageSystem;
+              function h(n, t) { var i = new XMLHttpRequest; i.onreadystatechange = function () { i.readyState == 4 && i.status == 200 && t(i.responseText) }; i.open("GET", n, !1); i.send(null) } function onlywhenready(n, t, i) { caches.has("Libs").then(function (n) { n || caches.open("Libs").then(function () { }) }); caches.match("/V").then(function (r) { r ? caches.match("/" + n).then(function (r) { r ? r.text().then(i => { Trinis.indexOf(n) == -1 ? (Trinis.push(n), proccess(i, t, n)) : t() }) : h1(Config.Blob + "blob?libs=" + i, t, n) }) : caches.open("Libs").then(function (r) { h1(Config.Blob + "blob?libs=" + i, t, n); r.put("V", new Response(appVersion)) }) }) } function h1(n, t, i) { h(n, function (n) { var e, o, s, r, u, f; if (Trinis.indexOf(i) == -1) { Trinis.push(i); e = document.head || document.getElementsByTagName("head")[0]; try { o = JSON.parse(n); for (s in o) r = o[s], r.T == "css" && (u = document.createElement("link"), u.setAttribute("rel", "stylesheet"), u.setAttribute("href", r.name), e.appendChild(u)), r.T == "js" && (f = document.createElement("script"), f.setAttribute("type", "text/javascript"), f.setAttribute("src", r.name), e.appendChild(f)); setTimeout(t, 1e3) } catch (h) { window.IsHttps && caches.open("Libs").then(function (t) { t.put(i, new Response(n)) }); proccess(n, t, i) } } else t() }) } function proccess(n, t, i = "") { var o = document.head || document.getElementsByTagName("head")[0], f = n.split("|||"), e = document.createDocumentFragment(), u, r; for (a in f) u = f[a], u[0] == "~" ? (u = u.substring(1), r = document.createElement("style"), r.type = "text/css", r.appendChild(document.createTextNode(u)), e.appendChild(r)) : (r = document.createElement("script"), r.type = "text/javascript", r.setAttribute("charset", "UTF-8"), r.appendChild(document.createTextNode(u)), e.appendChild(r)); o.appendChild(e); window.moduleLoad && (debug(`Loading module ${i}`), console.groupCollapsed(), console.log(i, f), console.groupEnd()); t() } function gupi(n, t) { t || (t = window.location.href); n = n.replace(/[\[\]]/g, "\\$&"); var r = new RegExp("[?&]" + n + "(=([^&#]*)|&|#|$)"), i = r.exec(t); return i ? i[2] ? decodeURIComponent(i[2].replace(/\+/g, " ")) : "" : null } function ExternalCssAndJS() { var i = document.head || document.getElementsByTagName("head")[0], r = document.getElementById("ExtraLinkCSS").value, u = document.getElementById("ExtraLinkJS").value, n, t; r != "" && (n = document.createElement("link"), n.setAttribute("rel", "stylesheet"), n.setAttribute("href", atob(r) + "?v=" + d), i.appendChild(n)); u != "" && (t = document.createElement("script"), t.setAttribute("type", "text/javascript"), t.setAttribute("src", atob(u) + "?v=" + d), i.appendChild(t)) } function maxAgeToGMT(n) { return n === Infinity ? "Fri, 31 Dec 9999 23:59:59 GMT" : new Date(n * 1e3 + Date.now()).toUTCString() } var __extends = this && this.__extends || function () { var n = function (t, i) { return n = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function (n, t) { n.__proto__ = t } || function (n, t) { for (var i in t) t.hasOwnProperty(i) && (n[i] = t[i]) }, n(t, i) }; return function (t, i) { function r() { this.constructor = t } n(t, i); t.prototype = i === null ? Object.create(i) : (r.prototype = i.prototype, new r) } }(), Trinis = [], TrinisLoaded = [], appVersion = 0, Init = function (n, t) { var i = "", u; const r = Config.libs[n]; window.moduleLoad && (debug(`Loading module ${n}`), console.groupCollapsed(), console.log(n, r), console.groupEnd()); for (const n in r) { const t = r[n]; i += t.deps + "|" + t.cls + "|" + t.loadcss + "~" } if (i != "") { if (i = encodeURIComponent(i), u = Math.round((new Date).getTime() / 1e3), !window.caches) { h1(Config.Blob + "blob?libs=" + i, t, n); return } h(Config.Blob + "getConfig", function (n) { n = JSON.parse(JSON.parse(n)); appVersion = n.version; document.cookie = `app_version=${n.version};`; for (const t in n) t !== "version" && (Config[t.charAt(0).toUpperCase() + t.slice(1)] = n[t]) }); caches.match("/V").then(function (r) { r ? r.text().then(r => { appVersion != r ? caches.delete("Libs").then(function () { onlywhenready(n, t, i) }) : onlywhenready(n, t, i) }) : onlywhenready(n, t, i) }) } else t() }, lng, cnt, jj, d; if (window.Vazhdo = !0, lng = docCookies.getItem("lng"), gupi("lng") && (lng = gupi("lng"), docCookies.setItem("lng", lng, Infinity)), !lng) { cnt = document.getElementById("CO").value; try { cnt && (jj = Config.GjuhetShtetet, lng = jj[cnt] ? jj[cnt] : Config.DefaultLang); docCookies.setItem("lng", lng, Infinity) } catch (e) { } } d = Math.round((new Date).getTime() / 1e3); h(Config.LanguageURL + lng + ".json?v=" + d, function (n) { Config.Language = JSON.parse(n) }); Config.Language || (Config.Language = {}); window.IsHttps = !1; Config.SelectedLang = lng; window.caches && (window.IsHttps = !0);
+              Config.Language.Monedhat = JSON.parse('{"M1": "LEK","M2": "EUR","M10":"CHF","ALL": "All","M7":"LEK"}');
+              eval('Config.Language.BetSlip.Monedha="EUR"');
+              if (!window.sessionStorage.getItem("OddFromat")) {
+                  window.sessionStorage.setItem(`OddFromat`, `Decimal`)
+              }
+              if (Vazhdo) {
+                  if (window.CSS && window.CSS.supports('color', "var(--supportCheck)")) {
+                      Init('Main', function () {
+                          ExternalCssAndJS();
+                          MainApp = new AppStart(8);
+                          MainApp.start();
+                      })
+                  } else {
+                      alert("This operating system is not supported")
+                      window.location.href = '//localhost'
+                  }
+              } else {
+                  window.location.href = '//localhost'
+              };
+          </script> 
+
+
+    </main>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+
+  </body>
+</html>
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<head><title>
+
+</title><link rel="icon" href="#" /><link rel="shortcut icon" href="#" /><meta name="HandheldFriendly" content="true" /><meta name="msapplication-tap-highlight" content="no" /><meta name="format-detection" content="telephone=no" /><meta http-equiv="CACHE-CONTROL" content="NO-CACHE" /><meta http-equiv="EXPIRES" content="0" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /><meta name="google" value="notranslate" /><meta name="apple-touch-fullscreen" content="YES" /><meta name="apple-mobile-web-app-status-bar-style" content="black" /><meta name="apple-mobile-web-app-capable" content="YES" /><meta name="description" content="Overview of all Sports" />
+<style>
+        body {
+            background-color: #666;
+        }
+
+        .logo2 {
+            background-image: var(--Logo);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center center;
+        }
+
+        .logo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 100%;
+            height: 400px;
+            display: var(--DisplayLogo);
+        }
+    </style>
+</body>
+ -->
