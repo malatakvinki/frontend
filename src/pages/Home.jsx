@@ -5,7 +5,6 @@ import Navbar from "./Navbar";
 
 
 const Home = () => { 
-    const location = useLocation();
 
     var win_location = window.location.href
     console.log(win_location);
@@ -38,11 +37,10 @@ const Home = () => {
         window.location.reload();
     }else{
         setTimeout(() => {
-            // if(sports_elements.length==0 && (win_location==='http://localhost:3000/')){
-            //     window.location.reload();
-            // }
-            console.log(location.pathname);
-        }, 5000);
+            if(sports_elements.length===0){
+                window.location.reload();
+            } 
+        }, 3000);
     }
 
 
