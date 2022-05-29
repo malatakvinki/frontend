@@ -46,7 +46,13 @@ const AddProviders = () => {
 
             const providerPost = await axios.post('https://tipwin360-backend.herokuapp.com/api/casino/provider', provider);
             console.log(providerPost);
-
+            
+            if(providerPost){
+                alert("SUCCESSFULLY ADDED PROVIDER MARKO! BRAVO!");
+                window.location.reload();
+            }else{
+                alert("SO ZAEBA? EBATE GLUPIOT NE E STAVENO!")
+            }
 
         }catch(err){
             console.log(err);
