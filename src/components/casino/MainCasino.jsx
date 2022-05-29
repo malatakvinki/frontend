@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";   
-import { BrowserRouter, Link, Route, Routes, Navigate,useLocation } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Routes, Navigate,useLocation, useParams } from 'react-router-dom';
 import axios from "axios";
 
 const MainCasino = () => { 
 
     const [providers, setProviders] = useState([]); 
+    const [casinoGames, setCasinoGames] = useState([]); 
 
     useEffect(() => {
       const getProviders = async () => {
@@ -16,7 +17,23 @@ const MainCasino = () => {
       getProviders();
     }, []);
 
-    console.log(providers);
+
+    const {
+        provider = 'novomatic', 
+    } = useParams();
+    
+    useEffect(() => {  
+        const getCasinoGames = async () => {
+            try {
+              const res = await axios.get(`http://localhost:5001/api/casino/games/${provider}`);  
+              setCasinoGames(res.data);  
+            } catch (err) {}
+          };
+          getCasinoGames();
+        
+    }, [provider]);
+
+    
     return (
     <div>   
 
@@ -41,16 +58,18 @@ const MainCasino = () => {
 
         <div className='all-games-grid'> 
                         
-            <a href="">
-                <div className='all-game-pod'>
-                    <div className='all-game-pod__items'>
-                        <div className='all-game-pod__image-container'>
-                            <img src='img' className='all-game-pod__image' />
+            {casinoGames ? ( casinoGames.map((game) => (
+                <Link to="/casino/game/">
+                    <div className='all-game-pod'>
+                        <div className='all-game-pod__items'>
+                            <div className='all-game-pod__image-container'>
+                                <img src={game.img} className='all-game-pod__image' />
+                            </div>
+                            <div className='all-game-pod__title'>{game.title}</div>
                         </div>
-                        <div className='all-game-pod__title'></div>
                     </div>
-                </div>
-            </a>  
+                </Link>  
+            ))) : "LOADING..."}
             
         </div>
 
