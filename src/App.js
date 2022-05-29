@@ -8,7 +8,7 @@ function App() {
     <>
       <BrowserRouter>  
         <Routes>
-          {/* <Route
+          <Route
             path="/"
             element={<Home />}
             exact
@@ -18,7 +18,7 @@ function App() {
             path="/casino"
             element={<Casino />}
             exact
-          ></Route> */}
+          ></Route>
         </Routes>
         </BrowserRouter>
     </>
