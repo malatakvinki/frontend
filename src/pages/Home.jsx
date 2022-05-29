@@ -6,15 +6,6 @@ import Navbar from "./Navbar";
 
 const Home = () => { 
 
-    const [casinoOpen, setCasinoOpen] = useState(false);
-
-    var sports = document.getElementById('sports-main-root'); 
-    var sports_elements = document.getElementsByClassName('kr-qendra'); 
-    if(sports==null){
-        window.location.reload();
-    } 
-
-
     function waitForElm(selector) {
         return new Promise(resolve => {
             if (document.querySelector(selector)) {
@@ -34,6 +25,21 @@ const Home = () => {
             });
         });
     }
+
+    const [casinoOpen, setCasinoOpen] = useState(false);
+
+    var sports = document.getElementById('sports-main-root'); 
+    var sports_elements = document.getElementsByClassName('kr-qendra'); 
+    if(sports==null){
+        // window.location.reload();
+    } 
+
+    setTimeout(() => {
+        if(sports_elements.length==0){
+            window.location.reload();
+
+        }
+    }, 5000);
 
 
     waitForElm('.hm-HeaderModule_Narrow').then((elm) => {
