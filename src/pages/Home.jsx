@@ -31,15 +31,15 @@ const Home = () => {
     var sports = document.getElementById('sports-main-root'); 
     var sports_elements = document.getElementsByClassName('kr-qendra'); 
     if(sports==null){
-        // window.location.reload();
-    } 
+        window.location.reload();
+    }else{
+        setTimeout(() => {
+            if(sports_elements.length==0){
+                window.location.reload();
+            }
+        }, 5000);
+    }
 
-    setTimeout(() => {
-        if(sports_elements.length==0){
-            window.location.reload();
-
-        }
-    }, 5000);
 
 
     waitForElm('.hm-HeaderModule_Narrow').then((elm) => {
