@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Link, Route, Routes, Navigate } from 'react-router-dom';
 import Home from "./pages/Home";
 import Casino from './pages/Casino';
+import AddProviders from './pages/AddProviders';
 
 function App() {
   return ( 
@@ -19,6 +20,13 @@ function App() {
             element={<Casino />}
             
           ></Route>
+
+          <Route
+            path="/addProvider"
+            element={<AddProviders />}
+            
+          ></Route>
+          
         </Routes>
         </BrowserRouter>
     </>

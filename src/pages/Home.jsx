@@ -34,7 +34,7 @@ const Home = () => {
     var sports_elements = document.getElementsByClassName('kr-qendra'); 
  
     if(sports==null){
-        window.location.reload();
+        window.location .reload();
     }else{
         setTimeout(() => {
             if(sports_elements.length===0){
