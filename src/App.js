@@ -17,7 +17,7 @@ function App() {
           <Route
             path="/casino"
             element={<Casino />}
-            exact
+            
           ></Route>
         </Routes>
         </BrowserRouter>

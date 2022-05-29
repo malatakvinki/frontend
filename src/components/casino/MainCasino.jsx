@@ -6,7 +6,7 @@ const MainCasino = () => {
     <div>   
 
         
-    <div className='all-games-page-component__content' style={{display:'block !important;'}}>
+    <div className='all-games-page-component__content' style={{display:'block !important'}}>
 
         <div className='all-games-grid-nav'>
             <div className='all-games-grid-nav__menu'>

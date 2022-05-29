@@ -1,11 +1,14 @@
 import React, { useState } from "react";  
-import { BrowserRouter, Link, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Routes, Navigate,useLocation } from 'react-router-dom';
 import CasinoComponent from "../components/CasinoComponent";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar"; 
 
 
 const Home = () => { 
+    const location = useLocation();
 
+    var win_location = window.location.href
+    console.log(win_location);
     function waitForElm(selector) {
         return new Promise(resolve => {
             if (document.querySelector(selector)) {
@@ -30,13 +33,15 @@ const Home = () => {
 
     var sports = document.getElementById('sports-main-root'); 
     var sports_elements = document.getElementsByClassName('kr-qendra'); 
+ 
     if(sports==null){
         window.location.reload();
     }else{
         setTimeout(() => {
-            if(sports_elements.length==0){
-                window.location.reload();
-            }
+            // if(sports_elements.length==0 && (win_location==='http://localhost:3000/')){
+            //     window.location.reload();
+            // }
+            console.log(location.pathname);
         }, 5000);
     }
 

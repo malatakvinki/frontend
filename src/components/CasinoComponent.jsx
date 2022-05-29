@@ -12,7 +12,7 @@ const CasinoComponent = () => {
         <div>
             <div className="ig-InstantGamesModule_Title">Casino</div>
             <div className="ig-HorizontalScroller">
-                <Link to="/casino">
+                <a href="/casino">
 
                     <div className="ig-HorizontalScroller_HScroll">
                         <div className="ig-InstantGamesModule_GamesContainer ig-h100 ig-HorizontalScroller_ScrollContent">
@@ -22,7 +22,7 @@ const CasinoComponent = () => {
                         <div className="ig-GameItem"><img src={LuckyLadyCasinoImg} alt="alt" className="ig-GameItem_Image" /></div>
                         </div>
                     </div>
-                </Link>
+                </a>
             </div>
         </div>
     </div>
