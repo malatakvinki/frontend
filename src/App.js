@@ -20,6 +20,7 @@ function App() {
             path="/casino"
             element={<Casino />}
             
+            
           ></Route>
 
 
