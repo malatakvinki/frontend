@@ -3,3 +3,4 @@ build project:
   script:
     - yarn install 
     - yarn run build 
+    - yarn start
