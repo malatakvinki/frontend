@@ -20,8 +20,7 @@ function App() {
             path="/casino"
             element={<Casino />}
           ></Route>
-
-
+          
           <Route
             path="/casino/provider/:provider"
             element={<Casino />}
