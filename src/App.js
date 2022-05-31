@@ -22,7 +22,6 @@ function App() {
           ></Route>
 
 
-
           <Route
             path="/casino/provider/:provider"
             element={<Casino />}
