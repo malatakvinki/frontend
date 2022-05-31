@@ -2,5 +2,4 @@ build project:
   image: node
   script:
     - yarn install 
-    - yarn build
-    - yarn start
+    - yarn build 
