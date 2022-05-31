@@ -19,8 +19,6 @@ function App() {
           <Route
             path="/casino"
             element={<Casino />}
-            
-            
           ></Route>
 
 
