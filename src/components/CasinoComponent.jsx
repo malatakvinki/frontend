@@ -10,7 +10,7 @@ const CasinoComponent = () => {
   return (
     <div className="instat-games">
         <div>
-            <div className="ig-InstantGamesModule_Title">Casinooooo</div>
+            <div className="ig-InstantGamesModule_Title">Casinooo</div>
             <div className="ig-HorizontalScroller">
                 <a href="/casino">
 
